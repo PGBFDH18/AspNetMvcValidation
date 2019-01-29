@@ -1,0 +1,18 @@
+﻿@model WebApplication1.Models.SimpleModel;
+@{
+    Layout = "_MittLayout";
+    ViewData["Title"] = "Min start sida";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    @for (var i = 10; i < 21; i++)
+    {<p>Line @i @Model.Name</p>}
+
+    <form method="post" action="res">
+        <input type="text" name="Name" />
+        <input type="submit" value="Click on me" />
+    </form>
+</div>
